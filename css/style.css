@@ -2,23 +2,35 @@
 
 body{
   background-color: var(--colorBackground);
+  font-family: var(--fonte);
+  color: var(--neutral);
+}
+
+/*Header*/
+.header-container{
+  height: 56px;
+  width: 1376px;
+  left: 32px;
+  top: 32px;
+  border-radius: 0px; 
+
+  display: flex;
+  align-items: center;
+  margin: 32px;
 }
 
 .logo{
-  margin-top: 44px;
-  margin-left: 32px;
   height: 34.04926681518555px;
   width: 145px;
   left: 0px;
   top: 12px;
   border-radius: 0px;
- 
+  
+  margin-left: 32px;
 }
 
 
 .busque{
-  margin-top: 32px;
-  margin-left: 167px;
   background-color:rgba(255, 255, 255, 0.16);
   height: 56px;
   width: 752px;
@@ -26,10 +38,11 @@ body{
   top: 0px;
   border-radius: 8px;
   border: none;
+
+  margin-left: 167px;
 }
 
 .busque::placeholder{
-  font-family: Inter, sans-serif;
   font-size: 16px;
   font-style: normal;
   padding-left: 14px;
@@ -41,7 +54,109 @@ body{
   text-align: left;
 }
 
+.fotoPerfil{
+  height: 32px;
+  width: 32px;
 
+  padding-left: 258px;
+}
+
+.fontePerfil{
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  padding-left: 8px;
+}
+
+.body-container{
+  display:flex;
+ 
+}
+
+/*Menu Lateral Esquerdo*/
+.menuEsquerdo{
+/* Menu */
+  position: absolute;
+  width: 189px;
+  height: 146px;
+  left: 32px;
+  top: 128px;
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menuLateralD-icone{
+  height: 48px;
+  width: 48px;
+  left: 0px;
+  top: 0px;
+  border-radius: 16px;
+
+}
+
+.fonteMenuLateralD{
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-decoration: none;
+  color: var(--neutral);
+
+  margin-left: 16px;
+}
+
+.tituloMenuLateralE{
+  width: 51px;
+  height: 18px;
+  left: 32px;
+  top: 128px;
+  
+  /* Sidebar title */
+ 
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: left;
+  /* identical to box height, or 150% */
+  
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  
+  /* Neutral/$white */
+  
+  color: #FFFFFF;
+
+}
+
+.menu-navegacao .menu-navegacao-item{
+  width: 189px;
+
+  margin-top: 16px;
+}
+
+.imagens-link, .menu-navegacao-item{
+  display: flex;
+  justify-content:start;
+  align-items: center;
+}
+
+
+.menuLateralD-container{
+  background: blueviolet;
+
+  display: flex;
+  flex-direction: column;
+}
 @media(min-width: 769px) {
 
 	
