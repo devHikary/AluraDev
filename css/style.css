@@ -1,0 +1,57 @@
+@import url(_variaveis.css);
+
+body{
+  background-color: var(--colorBackground);
+}
+
+.logo{
+  margin-top: 44px;
+  margin-left: 32px;
+  height: 34.04926681518555px;
+  width: 145px;
+  left: 0px;
+  top: 12px;
+  border-radius: 0px;
+ 
+}
+
+
+.busque{
+  margin-top: 32px;
+  margin-left: 167px;
+  background-color:rgba(255, 255, 255, 0.16);
+  height: 56px;
+  width: 752px;
+  left: 0px;
+  top: 0px;
+  border-radius: 8px;
+  border: none;
+}
+
+.busque::placeholder{
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  padding-left: 14px;
+  padding-top: 16px;
+  color: rgba(255, 255, 255, 0.64);
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+
+@media(min-width: 769px) {
+
+	
+
+}
+
+@media(min-width: 1000px) {
+	
+
+
+}
+
+
