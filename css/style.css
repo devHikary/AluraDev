@@ -72,12 +72,8 @@ body{
   padding-left: 8px;
 }
 
-.body-container{
-  display:flex;
- 
-}
-
 /*Menu Lateral Esquerdo*/
+
 .menuEsquerdo{
 /* Menu */
   position: absolute;
@@ -92,7 +88,7 @@ body{
   justify-content: space-between;
 }
 
-.menuLateralD-icone{
+.menuLateralE-icone{
   height: 48px;
   width: 48px;
   left: 0px;
@@ -101,7 +97,7 @@ body{
 
 }
 
-.fonteMenuLateralD{
+.fonteMenuLateralE{
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -140,7 +136,7 @@ body{
 
 .menu-navegacao .menu-navegacao-item{
   width: 189px;
-
+  
   margin-top: 16px;
 }
 
@@ -150,13 +146,282 @@ body{
   align-items: center;
 }
 
+/*Menu Direito*/
 
-.menuLateralD-container{
-  background: blueviolet;
-
-  display: flex;
-  flex-direction: column;
+.tituloMenuLateralD{
+  /* Seu projeto */
+  width: 130px;
+  height: 18px;
+  left: 1136px;
+  top: 128px;
+  
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height, or 150% */
+  
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  
 }
+
+
+.editor{
+  /* code_editor */
+
+/* Auto Layout */
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 32px;
+
+position: absolute;
+width: 752px;
+height: 366px;
+left: 344px;
+top: 128px;
+
+background: #6BD1FF;
+border-radius: 8px;
+}
+
+.menuDireito{
+  /* base */
+
+/* Auto Layout */
+
+position: absolute;
+width: 272px;
+height: 600px;
+left: 1200px;
+top: 128px;
+
+display: flex;
+flex-direction: column;
+
+
+}
+
+.tituloMenuDireito{
+/* Seu projeto */
+
+height: 18px;
+left: 1136px;
+top: 128px;
+
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 18px;
+/* identical to box height, or 150% */
+
+letter-spacing: 0.4em;
+text-transform: uppercase;
+
+margin-bottom: 16px;
+
+color: var(--neutral);
+
+}
+
+.inputNomeProjeto{
+  width: 272px;
+  height: 56px;
+  
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 8px;
+  border: none;
+  
+  margin-bottom: 16px;
+}
+
+
+.inputNomeProjeto::placeholder{
+/* $label */
+position: static;
+width: 159px;
+height: 24px;
+left: calc(50% - 159px/2 - 42.5px);
+top: calc(50% - 24px/2);
+
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+
+padding-left: 14px;
+
+
+/* Neutral/$white */
+
+color: #FFFFFF;
+
+opacity: 0.64;
+}
+
+.inputDescricao{
+  /* base */
+
+/* Auto Layout */
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+position: static;
+width: 272px;
+height: 80px;
+left: 0px;
+top: 0px;
+
+background: rgba(255, 255, 255, 0.16);
+border-radius: 8px;
+border: none;
+}
+
+.inputDescricao::placeholder{
+  /* $label */
+position: static;
+width: 189px;
+height: 48px;
+left: calc(50% - 189px/2 - 27.5px);
+top: calc(50% - 48px/2);
+
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+
+color: var(--neutral);
+opacity: 0.64;
+
+padding-left: 14px;
+}
+
+.tituloPerso{
+  /* Personalização */
+
+height: 18px;
+left: 1136px;
+top: 354px;
+
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 18px;
+/* identical to box height, or 150% */
+
+letter-spacing: 0.4em;
+text-transform: uppercase;
+
+color: var(--neutral);
+
+margin-top: 40px;
+
+}
+
+.selectLinguagem{
+  width: 272px;
+  height: 56px;
+  
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 8px;
+  border: none;
+  
+  margin-bottom: 16px;
+  font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+
+opacity: 0.64;
+padding: 16px;
+color: var(--neutral);
+}
+
+.dropdownLinguagem{
+  /* $label */
+
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+/* Neutral/$white */
+
+color: var(--blue300);
+
+padding: 16px;
+}
+
+.borderretang{
+  /* Rectangle 29 */
+
+  height: 56px;
+  left: 1136px;
+  top: 460px;
+
+  background: rgba(196, 196, 196, 0.01);
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 8px;
+
+  margin-bottom: 32px;
+}
+
+.retang{
+  /* Rectangle 30 */
+ 
+  width: 256px;
+  height: 40px;
+  left: 1144px;
+  top: 468px; 
+
+  background: #6BD1FF;
+  border-radius: 4px;
+
+  margin: 8px;
+}
+
+.botaoSalvar{
+  /* Button */
+
+width: 272px;
+height: 56px;
+left: 1136px;
+top: 548px;
+
+/* Blue/$blue-300 */
+
+background: #5081FB;
+border-radius: 8px;
+border: none;
+
+  /* Button */
+
+  left: 30.67%;
+  right: 30.72%;
+  top: 28.57%;
+  bottom: 28.57%;
+  
+  
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  
+  text-align: center;
+  
+  color: #051D3B;
+}
+
+.botaoSalvar::placeholder{
+
+}
+
 @media(min-width: 769px) {
 
 	
