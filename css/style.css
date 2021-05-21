@@ -16,6 +16,7 @@ body{
 
   display: flex;
   align-items: center;
+  justify-content:space-around;
   margin: 32px;
 }
 
@@ -25,21 +26,20 @@ body{
   left: 0px;
   top: 12px;
   border-radius: 0px;
-  
-  margin-left: 32px;
+ 
 }
 
 
 .busque{
   background-color:rgba(255, 255, 255, 0.16);
   height: 56px;
-  width: 752px;
+  width: 784px;
   left: 0px;
   top: 0px;
   border-radius: 8px;
   border: none;
 
-  margin-left: 167px;
+  margin-left: 150px;
 }
 
 .busque::placeholder{
@@ -58,7 +58,7 @@ body{
   height: 32px;
   width: 32px;
 
-  padding-left: 258px;
+  margin-left: 187px;
 }
 
 .fontePerfil{
@@ -67,9 +67,9 @@ body{
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0em;
-  text-align: left;
+  text-align: right;
 
-  padding-left: 8px;
+  margin-left: 8px;
 }
 
 /*Menu Lateral Esquerdo*/
@@ -166,32 +166,136 @@ body{
   
 }
 
+/*Quadro editor*/
 
-.editor{
-  /* code_editor */
+.quadro{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 16px;
+  padding-left: 32px;
 
-/* Auto Layout */
 
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 32px;
 
-position: absolute;
-width: 752px;
-height: 366px;
-left: 344px;
-top: 128px;
+  position: absolute;
+  width: 752px;
+  height: 366px;
+  left: 344px;
+  top: 128px;
 
-background: #6BD1FF;
-border-radius: 8px;
+  background: #6BD1FF;
+  border-radius: 8px;
 }
 
+.editor{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px;
+
+  position: static;
+  width: 688px;
+  height: 302px;
+  left: 32px;
+  top: 32px;
+
+  /* Neutral/$dark-gray */
+
+  background: #141414;
+  /* $editor-shadow */
+
+  box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.24);
+  border-radius: 8px;
+
+/* Inside Auto Layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 10px 0px;
+}
+
+.dot-container{
+  width: 52px;
+  height: 12px;
+
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.dot{
+  width: 12px;
+  height: 12px;
+  left: 16px;
+  top: 16px;
+
+  border-radius: 16px;
+}
+
+.macRed{
+  background: #FF5F56;
+}
+.macYellow{
+  /* Mac/$mac_yellow */
+  background: #FFBD2E;
+}
+.macGreen{
+/* Mac/$mac_green */
+  background: #27C93F;
+}
+
+.codigo{
+  position: static;
+  width: 656px;
+  height: 234px;
+  left: 16px;
+  top: 52px;
+
+  margin: 16px;
+}
+
+.fonteCodigo{
+  font-family: Roboto Mono,sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  
+}
+
+.centro-container{
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.botaoVisualizar{
+  position: absolute;
+  width: 784px;
+  height: 56px;
+  left: 344px;
+  top: 526px;
+  
+  background: rgba(80, 129, 251, 0.08);
+  border-radius: 8px;
+  border: none;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  
+  text-align: center;
+
+  color: var(--neutral);
+
+}
+
+/*Menu da Direita*/
 .menuDireito{
-  /* base */
-
-/* Auto Layout */
-
 position: absolute;
 width: 272px;
 height: 600px;
@@ -320,6 +424,7 @@ text-transform: uppercase;
 color: var(--neutral);
 
 margin-top: 40px;
+margin-bottom: 16px;
 
 }
 
@@ -388,16 +493,16 @@ padding: 16px;
 .botaoSalvar{
   /* Button */
 
-width: 272px;
-height: 56px;
-left: 1136px;
-top: 548px;
+  width: 272px;
+  height: 56px;
+  left: 1136px;
+  top: 548px;
 
-/* Blue/$blue-300 */
+  /* Blue/$blue-300 */
 
-background: #5081FB;
-border-radius: 8px;
-border: none;
+  background: #5081FB;
+  border-radius: 8px;
+  border: none;
 
   /* Button */
 
@@ -416,10 +521,6 @@ border: none;
   text-align: center;
   
   color: #051D3B;
-}
-
-.botaoSalvar::placeholder{
-
 }
 
 @media(min-width: 769px) {
