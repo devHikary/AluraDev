@@ -261,7 +261,15 @@ body{
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
-  
+  color: var(--neutral);
+
+  background: #141414;
+
+  height: 100%;
+  width: 100%;
+  border: none;
+  overflow-y: hidden;
+  resize: none;
 }
 
 .centro-container{
