@@ -1,0 +1,546 @@
+@import url(_variaveis.css);
+
+body{
+  background-color: var(--colorBackground);
+  font-family: var(--fonte);
+  color: var(--neutral);
+}
+
+/*Header*/
+.header-container{
+  height: 56px;
+  width: 1376px;
+  left: 32px;
+  top: 32px;
+  border-radius: 0px; 
+
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  margin: 32px;
+}
+
+.logo{
+  height: 34.04926681518555px;
+  width: 145px;
+  left: 0px;
+  top: 12px;
+  border-radius: 0px;
+ 
+}
+
+
+.busque{
+  background-color:rgba(255, 255, 255, 0.16);
+  height: 56px;
+  width: 784px;
+  left: 0px;
+  top: 0px;
+  border-radius: 8px;
+  border: none;
+
+  margin-left: 150px;
+}
+
+.busque::placeholder{
+  font-size: 16px;
+  font-style: normal;
+  padding-left: 14px;
+  padding-top: 16px;
+  color: rgba(255, 255, 255, 0.64);
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.fotoPerfil{
+  height: 32px;
+  width: 32px;
+
+  margin-left: 20%;
+}
+
+.fontePerfil{
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: right;
+
+  margin-left: 8px;
+}
+
+/*Menu Lateral Esquerdo*/
+
+.menuEsquerdo{
+/* Menu */
+  position: absolute;
+  width: 189px;
+  height: 146px;
+  left: 32px;
+  top: 128px;
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menuLateralE-icone{
+  height: 48px;
+  width: 48px;
+  left: 0px;
+  top: 0px;
+  border-radius: 16px;
+
+}
+
+.fonteMenuLateralE{
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-decoration: none;
+  color: var(--neutral);
+
+  margin-left: 16px;
+}
+
+.tituloMenuLateralE{
+  width: 51px;
+  height: 18px;
+  left: 32px;
+  top: 128px;
+  
+  /* Sidebar title */
+ 
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: left;
+  /* identical to box height, or 150% */
+  
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  
+  /* Neutral/$white */
+  
+  color: #FFFFFF;
+
+}
+
+.menu-navegacao .menu-navegacao-item{
+  width: 189px;
+  
+  margin-top: 16px;
+}
+
+.imagens-link, .menu-navegacao-item{
+  display: flex;
+  justify-content:start;
+  align-items: center;
+}
+
+/*Menu Direito*/
+
+.tituloMenuLateralD{
+  /* Seu projeto */
+  width: 130px;
+  height: 18px;
+  left: 1136px;
+  top: 128px;
+  
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height, or 150% */
+  
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  
+}
+
+/*Quadro editor*/
+
+.quadro{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 16px;
+  padding-left: 32px;
+
+
+
+  position: absolute;
+  width: 752px;
+  height: 366px;
+  left: 344px;
+  top: 128px;
+
+  background: #6BD1FF;
+  border-radius: 8px;
+}
+
+.editor{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px;
+
+  position: static;
+  width: 688px;
+  height: 302px;
+  left: 32px;
+  top: 32px;
+
+  /* Neutral/$dark-gray */
+
+  background: #141414;
+  /* $editor-shadow */
+
+  box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.24);
+  border-radius: 8px;
+
+/* Inside Auto Layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 10px 0px;
+}
+
+.dot-container{
+  width: 52px;
+  height: 12px;
+
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.dot{
+  width: 12px;
+  height: 12px;
+  left: 16px;
+  top: 16px;
+
+  border-radius: 16px;
+}
+
+.macRed{
+  background: #FF5F56;
+}
+.macYellow{
+  /* Mac/$mac_yellow */
+  background: #FFBD2E;
+}
+.macGreen{
+/* Mac/$mac_green */
+  background: #27C93F;
+}
+
+.codigo{
+  position: static;
+  width: 656px;
+  height: 234px;
+  left: 16px;
+  top: 52px;
+
+  margin: 16px;
+}
+
+.fonteCodigo{
+  font-family: Roboto Mono,sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--neutral);
+
+  background: #141414;
+
+  height: 100%;
+  width: 100%;
+  border: none;
+  overflow-y: hidden;
+  resize: none;
+}
+
+.centro-container{
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.botaoVisualizar{
+  position: absolute;
+  width: 784px;
+  height: 56px;
+  left: 344px;
+  top: 526px;
+  
+  background: rgba(80, 129, 251, 0.08);
+  border-radius: 8px;
+  border: none;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  
+  text-align: center;
+
+  color: var(--neutral);
+
+}
+
+/*Menu da Direita*/
+.menuDireito{
+position: absolute;
+width: 272px;
+height: 600px;
+left: 1200px;
+top: 128px;
+
+display: flex;
+flex-direction: column;
+
+
+}
+
+.tituloMenuDireito{
+/* Seu projeto */
+
+height: 18px;
+left: 1136px;
+top: 128px;
+
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 18px;
+/* identical to box height, or 150% */
+
+letter-spacing: 0.4em;
+text-transform: uppercase;
+
+margin-bottom: 16px;
+
+color: var(--neutral);
+
+}
+
+.inputNomeProjeto{
+  width: 272px;
+  height: 56px;
+  
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 8px;
+  border: none;
+  
+  margin-bottom: 16px;
+}
+
+
+.inputNomeProjeto::placeholder{
+/* $label */
+position: static;
+width: 159px;
+height: 24px;
+left: calc(50% - 159px/2 - 42.5px);
+top: calc(50% - 24px/2);
+
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+
+padding-left: 14px;
+
+
+/* Neutral/$white */
+
+color: #FFFFFF;
+
+opacity: 0.64;
+}
+
+.inputDescricao{
+  /* base */
+
+/* Auto Layout */
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+position: static;
+width: 272px;
+height: 80px;
+left: 0px;
+top: 0px;
+
+background: rgba(255, 255, 255, 0.16);
+border-radius: 8px;
+border: none;
+}
+
+.inputDescricao::placeholder{
+  /* $label */
+position: static;
+width: 189px;
+height: 48px;
+left: calc(50% - 189px/2 - 27.5px);
+top: calc(50% - 48px/2);
+
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+
+color: var(--neutral);
+opacity: 0.64;
+
+padding-left: 14px;
+}
+
+.tituloPerso{
+  /* Personalização */
+
+height: 18px;
+left: 1136px;
+top: 354px;
+
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 18px;
+/* identical to box height, or 150% */
+
+letter-spacing: 0.4em;
+text-transform: uppercase;
+
+color: var(--neutral);
+
+margin-top: 40px;
+margin-bottom: 16px;
+
+}
+
+.selectLinguagem{
+  width: 272px;
+  height: 56px;
+  
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 8px;
+  border: none;
+  
+  margin-bottom: 16px;
+  font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+
+opacity: 0.64;
+padding: 16px;
+color: var(--neutral);
+}
+
+.dropdownLinguagem{
+  /* $label */
+
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+/* Neutral/$white */
+
+color: var(--blue300);
+
+padding: 16px;
+}
+
+.borderretang{
+  /* Rectangle 29 */
+
+  height: 56px;
+  left: 1136px;
+  top: 460px;
+
+  background: rgba(196, 196, 196, 0.01);
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 8px;
+
+  margin-bottom: 32px;
+}
+
+.retang{
+  /* Rectangle 30 */
+ 
+  width: 256px;
+  height: 40px;
+  left: 1144px;
+  top: 468px; 
+
+  background: #6BD1FF;
+  border-radius: 4px;
+
+  margin: 8px;
+}
+
+.botaoSalvar{
+  /* Button */
+
+  width: 272px;
+  height: 56px;
+  left: 1136px;
+  top: 548px;
+
+  /* Blue/$blue-300 */
+
+  background: #5081FB;
+  border-radius: 8px;
+  border: none;
+
+  /* Button */
+
+  left: 30.67%;
+  right: 30.72%;
+  top: 28.57%;
+  bottom: 28.57%;
+  
+  
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  
+  text-align: center;
+  
+  color: #051D3B;
+}
+
+@media(min-width: 769px) {
+
+	
+
+}
+
+@media(min-width: 1000px) {
+	
+
+
+}
+
+
