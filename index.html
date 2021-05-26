@@ -25,23 +25,28 @@
       <div class="menuEsquerdo">
         <p class="tituloMenuLateralE">menu</p>
         <ul class="menu-navegacao">
-          <li class="menu-navegacao-item">
-            <div class="imagens-link">
-              <div class="icone"></div>
-              <img class="menuLateralE-icone" src="img/menuEsquerdo/iconeEditor.png">
-            </div>
-            <a class="fonteMenuLateralE" href="#">Editor de código</a>
-          </li>
-          <li class="menu-navegacao-item">
-            <div class="imagens-link">
-              <img class="menuLateralE-icone" src="img/menuEsquerdo/iconeComunidade.png">
-            </div>
-            <a class="fonteMenuLateralE" href="#">Comunidade</a>
-          </li>
+          <a href="desktop.html" id="botaoMenu">
+          <li class="menu-navegacao-item"> 
+              <div class="imagens-link">
+                <div class="icone"></div>
+                <img class="menuLateralE-icone" src="img/menuEsquerdo/iconeEditor.png">
+              </div>
+              <p class="fonteMenuLateralE">Editor de código</p>
+            </li>
+          </a>
+          <a href="#" id="botaoMenu">
+            <li class="menu-navegacao-item">
+              <div class="imagens-link">
+                <img class="menuLateralE-icone" src="img/menuEsquerdo/iconeComunidade.png">
+              </div>
+              <p class="fonteMenuLateralE" href="#">Comunidade</p>
+            </li>
+
+          </a>
         </ul>
       </div>
       <div class="quadro-container">
-        <div class="quadro">
+        <div class="quadro" id="quadroColor">
           <div class="editor">
             <div class="dot-container">
               <div class="dot macRed"></div>
@@ -78,15 +83,13 @@
           <option class="dropdownLinguagem" value="html">HTML</option>
           <option class="dropdownLinguagem" value="css">CSS</option>
         </select>
-        <div class="borderretang ">
-          <div class="retang"></div>
-        </div>
+        <input type="color" class="retang" value="#6BD1FF" data-color></input>
         <button class="botaoSalvar">Salvar Projeto</button>
       </div>
     </div>
   </main>
 
-
+<script src="corFundo.js"></script>
 </body>
 
 </html>
