@@ -25,21 +25,21 @@
       <div class="menuEsquerdo">
         <p class="tituloMenuLateralE">menu</p>
         <ul class="menu-navegacao">
-          <a href="desktop.html" id="botaoMenu">
-          <li class="menu-navegacao-item"> 
+          <a>
+            <li class="menu-navegacao-item">
               <div class="imagens-link">
                 <div class="icone"></div>
                 <img class="menuLateralE-icone" src="img/menuEsquerdo/iconeEditor.png">
               </div>
-              <p class="fonteMenuLateralE">Editor de código</p>
+              <p class="fonteMenuLateralE ">Editor de código</p>
             </li>
           </a>
-          <a href="#" id="botaoMenu">
+          <a href="comunidade.html">
             <li class="menu-navegacao-item">
               <div class="imagens-link">
-                <img class="menuLateralE-icone" src="img/menuEsquerdo/iconeComunidade.png">
+                <img class="menuLateralE-icone editor-icone" src="img/menuEsquerdo/iconeComunidade.png">
               </div>
-              <p class="fonteMenuLateralE" href="#">Comunidade</p>
+              <p class="fonteMenuLateralE editor-icone">Comunidade</p>
             </li>
 
           </a>
@@ -53,20 +53,20 @@
               <div class="dot macYellow"></div>
               <div class="dot macGreen"></div>
             </div>
-            <div class="codigo"></br>
-              <textarea class="fonteCodigo">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => </br>
-                  accum[key], obj)</br>
-                  </br>
-                  const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), </br>
-                  res)</br>
-                  </br>
-                  const unfold = (f, seed) => {</br>
-                  const go = (f, seed, acc) => {</br>
-                  const res = f(seed)</br>
-                  return res ? go(f, res[1], acc.concat([res[0]])) : acc</br>
-                  }</br>
-                  return go(f, seed, [])</br>
-                  }</br>
+            <div class="codigo">
+              <textarea class="fonteCodigo">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => 
+                  accum[key], obj)
+                  
+                  const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), 
+                  res)
+                  
+                  const unfold = (f, seed) => {
+                  const go = (f, seed, acc) => {
+                  const res = f(seed)
+                  return res ? go(f, res[1], acc.concat([res[0]])) : acc
+                  }
+                  return go(f, seed, [])
+                  }
                 </textarea>
             </div>
           </div>
@@ -89,7 +89,7 @@
     </div>
   </main>
 
-<script src="corFundo.js"></script>
+  <script src="./js/corFundo.js"></script>
 </body>
 
 </html>

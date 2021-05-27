@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AluraDev</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/comunidade.css">
+</head>
+
+<body>
+
+  <header class="container">
+    <img class="logo" src="img/header/Logo.png" alt="Logo">
+    <input class="busque" type="search" placeholder="Busque por algo">
+    <div class="perfil">
+      <img src='img/header/iconeMenu.png' id='menu-icon' alt='Icone de menu'>
+      <img class="fotoPerfil" src="img/header/Photo.png" alt="Foto Perfil">
+      <p class="fontePerfil">Harry</p>
+    </div>
+  </header>
+  <main>
+    <div class="body-container">
+      <div class="menuEsquerdo">
+        <p class="tituloMenuLateralE">menu</p>
+        <ul class="menu-navegacao">
+          <a href="index.html">
+            <li class="menu-navegacao-item">
+              <div class="imagens-link">
+                <div class="icone"></div>
+                <img class="menuLateralE-icone editor-icone" src="img/menuEsquerdo/iconeEditor.png">
+              </div>
+              <p class="fonteMenuLateralE editor-icone">Editor de código</p>
+            </li>
+          </a>
+          <a>
+            <li class="menu-navegacao-item">
+              <div class="imagens-link">
+                <img class="menuLateralE-icone" src="img/menuEsquerdo/iconeComunidade.png">
+              </div>
+              <p class="fonteMenuLateralE">Comunidade</p>
+            </li>
+
+          </a>
+        </ul>
+      </div>
+      <div class="quadros">
+
+        <div class="quadro-container">
+          <div class="quadro" id="quadroColor">
+            <div class="editor">
+              <div class="dot-container">
+                <div class="dot macRed"></div>
+                <div class="dot macYellow"></div>
+                <div class="dot macGreen"></div>
+              </div>
+              <div class="codigo">
+                <textarea class="fonteCodigo">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => 
+                    accum[key], obj)
+                    
+                    const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), 
+                    res)
+                    
+                    const unfold = (f, seed) => {
+                    const go = (f, seed, acc) => {
+                    const res = f(seed)
+                    return res ? go(f, res[1], acc.concat([res[0]])) : acc
+                    }
+                    return go(f, seed, [])
+                    }
+                  </textarea>
+              </div>
+            </div>
+          </div>
+          <button class="botaoVisualizar">Visualizar com o highlight</button>
+        </div>
+        <div class="quadro-container">
+          <div class="quadro" id="quadroColor">
+            <div class="editor">
+              <div class="dot-container">
+                <div class="dot macRed"></div>
+                <div class="dot macYellow"></div>
+                <div class="dot macGreen"></div>
+              </div>
+              <div class="codigo">
+                <textarea class="fonteCodigo">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => 
+                </textarea>
+              </div>
+            </div>
+          </div>
+          <button class="botaoVisualizar">Visualizar com o highlight</button>
+        </div>
+      </div>
+     
+  </main>
+
+  <script src="./js/corFundo.js"></script>
+</body>
+
+</html>
