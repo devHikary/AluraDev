@@ -47,7 +47,8 @@ function montaProjeto() {
       'nomeDoProjeto': tituloProjeto.value,
       'descricaoDoProjeto': descricaoProjeto.value,
       'linguagem': linguagem.value,
-      'codigo': areaDoCodigo.querySelector('code').innerText
+      'codigo': areaDoCodigo.querySelector('code').innerText,
+      'cor': document.querySelector('[data-color]').value
     }
   }
   return projeto

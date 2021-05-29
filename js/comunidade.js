@@ -20,12 +20,15 @@ function mostraProjetos() {
     
     const codigo = codigoHtml.querySelector('code')
     hljs.highlightBlock(codigo)
+
+    codigoHtml.querySelector('#quadroColor').style.backgroundColor = projeto.detalhesDoProjeto.cor
   })
+  console.log(projetos)
 }
 
 function criaCartao(projeto) {
   const cartao = `
-    <div class="quadro-container">
+    <div class="quadro-container" data-id="${projeto.id}">
           <div class="quadro" id="quadroColor">
             <div class="editor">
               <div class="dot-container">
@@ -33,7 +36,7 @@ function criaCartao(projeto) {
                 <div class="dot macYellow"></div>
                 <div class="dot macGreen"></div>
               </div>
-              <div class="codigo" data-id="${projeto.id}">
+              <div class="codigo" >
                 <code class="fonteCodigo hljs ${projeto.detalhesDoProjeto.linguagem}"></code>
               </div>
             </div>
