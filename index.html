@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>AluraDev</title>
   <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/dracula.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -20,7 +21,7 @@
       <img src='img/header/iconeMenu.png' id='menu-icon' alt='Icone de menu'>
     </div>
   </header>
-  <main>
+  <main spellcheck="false">
     <div class="body-container">
       <div class="menuEsquerdo">
         <p class="tituloMenuLateralE">menu</p>
@@ -54,20 +55,7 @@
               <div class="dot macGreen"></div>
             </div>
             <div class="codigo">
-              <textarea class="fonteCodigo">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => 
-                  accum[key], obj)
-                  
-                  const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), 
-                  res)
-                  
-                  const unfold = (f, seed) => {
-                  const go = (f, seed, acc) => {
-                  const res = f(seed)
-                  return res ? go(f, res[1], acc.concat([res[0]])) : acc
-                  }
-                  return go(f, seed, [])
-                  }
-                </textarea>
+              <code class="fonteCodigo hljs" contenteditable="true" aria-label="editor"></code>
             </div>
           </div>
         </div>
@@ -78,7 +66,7 @@
         <input class="inputNomeProjeto" type="search" placeholder="Nome do seu projeto">
         <input class="inputDescricao" type="search" placeholder="Descrição do seu projeto">
         <p class="tituloPerso">personalização</p>
-        <select class="selectLinguagem">
+        <select name="selectLinguagem" class="selectLinguagem">
           <option class="dropdownLinguagem" value="javascript">JavaScript</option>
           <option class="dropdownLinguagem" value="html">HTML</option>
           <option class="dropdownLinguagem" value="css">CSS</option>
@@ -89,7 +77,8 @@
     </div>
   </main>
 
-  <script src="./js/corFundo.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+  <script src="./js/index.js"></script>
 </body>
 
 </html>

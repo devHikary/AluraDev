@@ -20,7 +20,7 @@
       <img src='img/header/iconeMenu.png' id='menu-icon' alt='Icone de menu'>
     </div>
   </header>
-  <main>
+  <main spellcheck="false">
     <div class="body-container">
       <div class="menuEsquerdo">
         <p class="tituloMenuLateralE">menu</p>
@@ -56,7 +56,7 @@
                 <div class="dot macGreen"></div>
               </div>
               <div class="codigo">
-                <textarea class="fonteCodigo">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => 
+                <textarea class="fonteCodigo hljs" >const pluckDeep = key => obj => key.split('.').reduce((accum, key) => 
                     accum[key], obj)
                     
                     const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), 
@@ -84,6 +84,22 @@
                 <div class="dot macGreen"></div>
               </div>
               <div class="codigo">
+                <textarea class="fonteCodigo" >const pluckDeep = key => obj => key.split('.').reduce((accum, key) => 
+                </textarea>
+              </div>
+            </div>
+          </div>
+          <button class="botaoVisualizar">Visualizar com o highlight</button>
+        </div>
+        <div class="quadro-container">
+          <div class="quadro" id="quadroColor">
+            <div class="editor">
+              <div class="dot-container">
+                <div class="dot macRed"></div>
+                <div class="dot macYellow"></div>
+                <div class="dot macGreen"></div>
+              </div>
+              <div class="codigo">
                 <textarea class="fonteCodigo">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => 
                 </textarea>
               </div>
@@ -92,7 +108,7 @@
           <button class="botaoVisualizar">Visualizar com o highlight</button>
         </div>
       </div>
-     
+
   </main>
 
   <script src="./js/corFundo.js"></script>
