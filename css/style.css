@@ -180,6 +180,7 @@ body{
 }
 
 .fonteCodigo{
+  position: block;
   font-family: Roboto Mono,sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -190,7 +191,7 @@ body{
   color: var(--neutral);
 
   height: 95%;
-  width: 95%;
+  width: 93%;
   border: none;
   overflow-y: hidden;
   resize: none;
