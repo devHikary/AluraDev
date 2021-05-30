@@ -23,7 +23,6 @@ function mostraProjetos() {
 
     codigoHtml.querySelector('#quadroColor').style.backgroundColor = projeto.detalhesDoProjeto.cor
   })
-  console.log(projetos)
 }
 
 function criaCartao(projeto) {

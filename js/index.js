@@ -8,6 +8,8 @@ const botaoSalvar = document.querySelector('.botaoSalvar')
 
 const inputColor = document.querySelector('[data-color]');
 
+const iconeMenu = document.querySelector('#menu-icon')
+
 inputColor.addEventListener('input', (evento) => {
 
   evento.preventDefault();
@@ -57,3 +59,9 @@ function montaProjeto() {
 function salvaLocalStorage(objetoJson) {
   localStorage.setItem(objetoJson.id, JSON.stringify(objetoJson))
 }
+
+
+iconeMenu.addEventListener('click', () => {
+  const body = document.querySelector('.menuHamburguer')
+  body.classList.toggle('show')
+})

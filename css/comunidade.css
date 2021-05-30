@@ -126,7 +126,7 @@ body{
   padding-left: 4%;
 
   width: 90%;
-  height: 280px;
+  height: 87%;
 
   /* Neutral/$dark-gray */
 
@@ -182,22 +182,7 @@ body{
 }
 
 .fonteCodigo{
-  font-family: Roboto Mono,sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-  color: var(--neutral);
-
-  background: #141414;
-
-  height: 95%;
-  width: 93%;
-  border: none;
-  overflow-y: hidden;
-  resize: none;
-
-  margin-top: 10px;
+  height: 80%;
   
 }
 
@@ -281,6 +266,26 @@ body{
     height: 350px;
   }
 
+  .fonteCodigo{
+    font-family: Roboto Mono,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--neutral);
+  
+    background: #141414;
+  
+    height: 100%;
+    width: 90%;
+    border: none;
+    overflow-y: hidden;
+    resize: none;
+  
+    margin-top: 10px;
+    
+  }
+
 }
 @media screen and (min-width: 1025px) {
 /*Header*/
@@ -335,7 +340,7 @@ body{
     opacity: 1;
   }
 
-  .fonteMenuLateralE{
+    .fonteMenuLateralE{
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -390,7 +395,10 @@ body{
   }
 
   /*Quadro*/
-  
+  .fonteCodigo{
+    height: 100%;
+  }
+
 
 
 }
