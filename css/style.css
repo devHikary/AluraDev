@@ -164,7 +164,7 @@ body{
   align-items: center;
 }
 
-
+/*menu hamburguer*/
 .menuHamburguer{
   width: 254px;
   height: 912px;
@@ -204,10 +204,6 @@ body{
 }
 
 /*Quadro editor*/
-.quadro-container{
-  margin-right: 0;
-}
-
 .quadro{
   display: flex;
   flex-direction: column;
@@ -227,7 +223,7 @@ body{
   padding-left: 4%;
 
   width: 93%;
-  height: 305px;
+  height: 300px;
 
   /* Neutral/$dark-gray */
 
@@ -617,7 +613,7 @@ body{
   }
 
   .editor{
-    height: 300px;
+    height: 295px;
   }
 
 }

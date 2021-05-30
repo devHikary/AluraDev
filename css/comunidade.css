@@ -87,6 +87,64 @@ body{
   margin-right: 12%;
 }
 
+.fonteMenuLateralE{
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-decoration: none;
+  color: var(--neutral);
+
+  margin-left: 16px;
+}
+
+.tituloMenuLateralE{
+  width: 51px;
+  height: 18px;
+  left: 32px;
+  top: 128px;
+  
+  /* Sidebar title */
+ 
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: left;
+  /* identical to box height, or 150% */
+  
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  
+  /* Neutral/$white */
+  
+  color: #FFFFFF;
+
+}
+
+.menu-navegacao .menu-navegacao-item{
+  width: 189px;
+  
+  margin-top: 16px;
+}
+
+
+.imagens-link, .menu-navegacao-item{
+  display: flex;
+  justify-content:start;
+  align-items: center;
+}
+
+.menuLateralE-icone{
+  height: 48px;
+  width: 48px;
+  left: 0px;
+  top: 0px;
+  border-radius: 16px;
+}
+
 /*Main*/
 .body-container{
   display: flex;
@@ -230,6 +288,45 @@ body{
   margin: 10px;
 }
 
+/*menu hamburguer*/
+.menuHamburguer{
+  width: 254px;
+  height: 912px;
+  background: #2D415B;
+  border-radius: 8px;
+  position: absolute;
+  display: none;
+  top: 100px;
+  right: 10px;
+
+  padding-top: 24px;
+  padding-left: 24px;
+}
+
+.show{
+  display: block;
+}
+
+.divisoria{
+ 
+  opacity: 0.08;
+  
+  border: 1px solid #FFFFFF;
+  margin: 24px 24px 24px 0;
+}
+
+.perfilHamburguer{
+  display: flex;
+  align-items: center;
+  margin-right: 5%;
+}
+
+.perfilHamburguer, .autorPerfil{
+  width: 2rem;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
 @media screen and (min-width: 768px) {
   .body-container{
     flex-direction: column;
@@ -286,6 +383,32 @@ body{
     
   }
 
+  .autor-container{
+    margin-left: 34%;
+  }
+
+  /*Menu hamburguer*/
+.menuHamburguer{
+  display: flex;
+  flex-direction: column;
+
+  width: 254px;
+  height: 912px;
+  background: #2D415B;
+  border-radius: 8px;
+  position: absolute;
+  display: none;
+  top: 100px;
+  right: 10px;
+
+  padding-top: 24px;
+  padding-left: 24px;
+}
+
+.show{
+  display: block;
+}
+
 }
 @media screen and (min-width: 1025px) {
 /*Header*/
@@ -323,13 +446,6 @@ body{
     justify-content: space-between;
   }
   
-  .menuLateralE-icone{
-    height: 48px;
-    width: 48px;
-    left: 0px;
-    top: 0px;
-    border-radius: 16px;
-  }
   .editor-icone{
     opacity: 0.50;
   }
@@ -340,55 +456,7 @@ body{
     opacity: 1;
   }
 
-    .fonteMenuLateralE{
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0em;
-    text-align: left;
-    text-decoration: none;
-    color: var(--neutral);
-  
-    margin-left: 16px;
-  }
-  
-  .tituloMenuLateralE{
-    width: 51px;
-    height: 18px;
-    left: 32px;
-    top: 128px;
     
-    /* Sidebar title */
-   
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 18px;
-    text-align: left;
-    /* identical to box height, or 150% */
-    
-    letter-spacing: 0.4em;
-    text-transform: uppercase;
-    
-    /* Neutral/$white */
-    
-    color: #FFFFFF;
-  
-  }
-  
-  .menu-navegacao .menu-navegacao-item{
-    width: 189px;
-    
-    margin-top: 16px;
-  }
-
- 
-  .imagens-link, .menu-navegacao-item{
-    display: flex;
-    justify-content:start;
-    align-items: center;
-  }
 
   .body-container{
     flex-direction: row;
@@ -399,6 +467,13 @@ body{
     height: 100%;
   }
 
+  .autor-container{
+    margin-left: 40%;
+  }
 
+/*Menu hamburguer*/
+.menuHamburguer{
+  display: none;
+}
 
 }

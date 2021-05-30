@@ -1,5 +1,7 @@
 const listaProjetos = document.querySelector('.quadros')
 
+const iconeMenu = document.querySelector('#menu-icon')
+
 new function () {
   mostraProjetos()
 }
@@ -55,3 +57,8 @@ function criaCartao(projeto) {
     `
   return cartao
 }
+
+iconeMenu.addEventListener('click', () => {
+  const body = document.querySelector('.menuHamburguer')
+  body.classList.toggle('show')
+})
