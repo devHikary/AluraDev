@@ -45,10 +45,12 @@ function criaCartao(projeto) {
           <h2 class="tituloProjeto">${projeto.detalhesDoProjeto.nomeDoProjeto}</h2>
           <p class="descricaoProjeto">${projeto.detalhesDoProjeto.descricaoDoProjeto}</p>
           <div class="icone-container">
-            <img class="iconeComentaLike" src="./img/comunidade/iconeComentario.png">
-            <p class="numero">9</p>
-            <img class="iconeComentaLike" src="./img/comunidade/iconeLike.png">
-            <p class="numero">9</p>
+            <div class="iconeComentaLike-container">
+              <img class="iconeComentaLike" src="./img/comunidade/iconeComentario.png">
+              <p class="numero">9</p>
+              <img class="iconeComentaLike" src="./img/comunidade/iconeLike.png">
+              <p class="numero">9</p>
+            </div>
             <div  class="autor-container">
               <img class="iconeComentaLike" src="./img/comunidade/iconeAutor.png">
               <p class="numero">@Harry</p>

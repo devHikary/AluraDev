@@ -8,7 +8,7 @@ body{
 }
 
 /*Header*/
-.container{
+.header-container{
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -71,9 +71,10 @@ body{
 }
 
 .fontePerfil{
-  width: 2rem;
+  width: 2rem ;
   border-radius: 50%;
   margin-right: 0.5rem;
+  margin-bottom: 0;
 }
 
 .fotoPerfil, .fontePerfil, .busque{
@@ -125,6 +126,7 @@ body{
   color: var(--neutral);
 
   margin-left: 16px;
+  margin-bottom: 0;
 }
 
 .tituloMenuLateralE{
@@ -222,7 +224,7 @@ body{
   padding-top: 4%;
   padding-left: 4%;
 
-  width: 93%;
+  width: 97%;
   height: 300px;
 
   /* Neutral/$dark-gray */
@@ -290,7 +292,7 @@ body{
   color: var(--neutral);
 
   height: 95%;
-  width: 93%;
+  width: 97%;
   border: none;
   overflow-y: hidden;
   resize: none;
@@ -558,6 +560,18 @@ body{
 
   .botaoSalvar:focus{
     background-color: var(--blue100);
+  }
+
+  .fonteModal{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    
+    text-align: center;
+    
+    color: #051D3B;
   }
 
 @media screen and (min-width: 768px) {

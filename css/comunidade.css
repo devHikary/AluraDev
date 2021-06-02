@@ -241,7 +241,7 @@ body{
 
 .fonteCodigo{
   height: 80%;
-  
+  margin-top: 10px;
 }
 
 .tituloProjeto{
@@ -269,19 +269,23 @@ body{
 
 .icone-container{
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
   flex-direction: row;
   align-items: center;
 
   margin-top: 4%;
+  padding-right: 4%;
 }
 
 .autor-container{
   display: flex;
   flex-direction: row;
   align-items: center;
-  
-  margin-left: 50%;
+}
+
+.iconeComentaLike-container{
+  display: flex;
+  align-items: center;
 }
 
 .iconeComentaLike{
@@ -382,11 +386,6 @@ body{
     margin-top: 10px;
     
   }
-
-  .autor-container{
-    margin-left: 34%;
-  }
-
   /*Menu hamburguer*/
 .menuHamburguer{
   display: flex;
@@ -466,11 +465,6 @@ body{
   .fonteCodigo{
     height: 100%;
   }
-
-  .autor-container{
-    margin-left: 40%;
-  }
-
 /*Menu hamburguer*/
 .menuHamburguer{
   display: none;

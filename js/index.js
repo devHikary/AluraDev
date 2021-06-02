@@ -36,7 +36,7 @@ botaoSalvar.addEventListener('click', () => {
   if (typeof(Storage) !== "undefined") {
       console.log('Yay, support!')
       const projeto = montaProjeto()
-      salvaLocalStorage(projeto)
+      salvaLocalStorage(projeto)      
   } else {
       console.log('Nay, no support!')
   }
@@ -58,6 +58,11 @@ function montaProjeto() {
 
 function salvaLocalStorage(objetoJson) {
   localStorage.setItem(objetoJson.id, JSON.stringify(objetoJson))
+
+  $("#ModalSalvo").modal('show');
+  $(".fonteCodigo").contents().remove();
+  $(".inputNomeProjeto").val('');
+  $(".inputDescricao").val('');
 }
 
 
@@ -65,3 +70,4 @@ iconeMenu.addEventListener('click', () => {
   const body = document.querySelector('.menuHamburguer')
   body.classList.toggle('show')
 })
+
