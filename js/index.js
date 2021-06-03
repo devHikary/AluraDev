@@ -18,9 +18,9 @@ inputColor.addEventListener('input', (evento) => {
 })
 
 function mudaLinguagem() {
-  const codigo = areaDoCodigo.querySelector('code')
+  let codigo = areaDoCodigo.querySelector('code').innerText
   areaDoCodigo.innerHTML = `<code class="fonteCodigo hljs ${linguagem.value}" contenteditable="true" aria-label="editor"></code>`
-  areaDoCodigo.firstChild.innerText = codigo.innerText
+  areaDoCodigo.firstChild.innerText = codigo
 }
 
 linguagem.addEventListener('change', () => {
