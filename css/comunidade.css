@@ -1,4 +1,16 @@
-@import url(_variaveis.css);
+:root{
+  --colorBackground: #051D3B;
+  --blue300: #5081FB;
+  --blue200: #7BA4FC;
+  --blue100: #96B9FD;
+  --white: #FFFFFF;
+  --neutral: rgba(255, 255, 255, 1);
+ 
+  --sombra:#0000000F;
+ 
+ --fonte: Inter, sans-serif;
+  
+ }
 
 body{
   background-color: var(--colorBackground);
