@@ -10,7 +10,7 @@ const inputColor = document.querySelector('[data-color]');
 
 const iconeMenu = document.querySelector('#menu-icon')
 
-const botaoTeste = document.querySelector('.botaoTeste')
+const botaoImg = document.querySelector('.botaoImg')
 const botaoTxt = document.querySelector('.botaoTxt')
 
 inputColor.addEventListener('input', (evento) => {
@@ -76,7 +76,7 @@ iconeMenu.addEventListener('click', () => {
 
 
 
-botaoTeste.addEventListener('click', () => {
+botaoImg.addEventListener('click', () => {
   const canvas = document.querySelector(".quadro");
   console.log('click');
   domtoimage.toBlob(canvas)

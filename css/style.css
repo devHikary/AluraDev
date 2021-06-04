@@ -330,6 +330,13 @@ body{
 
 }
 
+.botaoExportarContainer
+{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
 .botaoVisualizar:active{
   background: rgba(80, 129, 251, 0.16);
   border: 4px solid rgba(80, 129, 251, 0.24);
@@ -530,7 +537,7 @@ body{
   }
   
   
-  .botaoSalvar{
+  .botaoAzul{
     /* Button */
   
     width: 100%;
@@ -561,17 +568,25 @@ body{
     color: #051D3B;
   }
 
-  .botaoSalvar:hover{
+  .botaoAzul:hover{
     background-color: var(--blue200);
   }
 
-  .botaoSalvar:active{
+  .botaoAzul:active{
     background: #7BA4FC;
     border: 4px solid rgba(80, 129, 251, 0.72);
   }
 
-  .botaoSalvar:focus{
+  .botaoAzul:focus{
     background-color: var(--blue100);
+  }
+
+  .botaoImg{
+    width: 49%;
+  }
+
+  .botaoTxt{
+    width: 49%;
   }
 
   .fonteModal{
