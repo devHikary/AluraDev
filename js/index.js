@@ -10,6 +10,9 @@ const inputColor = document.querySelector('[data-color]');
 
 const iconeMenu = document.querySelector('#menu-icon')
 
+const botaoTeste = document.querySelector('.botaoTeste')
+const botaoTxt = document.querySelector('.botaoTxt')
+
 inputColor.addEventListener('input', (evento) => {
 
   evento.preventDefault();
@@ -18,9 +21,9 @@ inputColor.addEventListener('input', (evento) => {
 })
 
 function mudaLinguagem() {
-  const codigo = areaDoCodigo.querySelector('code')
+  const codigo = areaDoCodigo.querySelector('code').innerText
   areaDoCodigo.innerHTML = `<code class="fonteCodigo hljs ${linguagem.value}" contenteditable="true" aria-label="editor"></code>`
-  areaDoCodigo.firstChild.innerText = codigo.innerText
+  areaDoCodigo.firstChild.innerText = codigo
 }
 
 linguagem.addEventListener('change', () => {
@@ -71,3 +74,31 @@ iconeMenu.addEventListener('click', () => {
   body.classList.toggle('show')
 })
 
+
+
+botaoTeste.addEventListener('click', () => {
+  const canvas = document.querySelector(".quadro");
+  console.log('click');
+  domtoimage.toBlob(canvas)
+  .then(function(blob){
+    saveAs(blob, "code.png");
+  })
+  .catch(function (error) {
+    console.error('oops, something went wrong!', error);
+  });
+});
+
+botaoTxt.addEventListener('click', () => {
+  console.log('click');
+  const codigo = areaDoCodigo.querySelector('code').innerText
+  var blob = new Blob([codigo], {type: "text/plain;charset=utf-8"});
+    saveAs(blob, "code.txt");
+});
+
+
+// domtoimage.toPng(canvas)
+// .then(function (dataUrl) {
+//   var img = new Image();
+//   img.src = dataUrl;
+//   //document.body.appendChild(img);
+// })
