@@ -38,8 +38,13 @@ botaoPreview.addEventListener('click', () => {
 botaoSalvar.addEventListener('click', () => {
   if (typeof(Storage) !== "undefined") {
       console.log('Yay, support!')
-      const projeto = montaProjeto()
-      salvaLocalStorage(projeto)      
+      if(areaDoCodigo.querySelector('code').innerText.length != 0)
+      {
+        const projeto = montaProjeto()
+        salvaLocalStorage(projeto)      
+      }else{
+        Mensagem('Preencha o código!');
+      }
   } else {
       console.log('Nay, no support!')
   }
@@ -62,7 +67,7 @@ function montaProjeto() {
 function salvaLocalStorage(objetoJson) {
   localStorage.setItem(objetoJson.id, JSON.stringify(objetoJson))
 
-  $("#ModalSalvo").modal('show');
+  Mensagem('Projeto salvo!');
   $(".fonteCodigo").contents().remove();
   $(".inputNomeProjeto").val('');
   $(".inputDescricao").val('');
@@ -95,10 +100,7 @@ botaoTxt.addEventListener('click', () => {
     saveAs(blob, "code.txt");
 });
 
-
-// domtoimage.toPng(canvas)
-// .then(function (dataUrl) {
-//   var img = new Image();
-//   img.src = dataUrl;
-//   //document.body.appendChild(img);
-// })
+function Mensagem(msg){
+  $(".fonteModal").text(msg);
+  $("#ModalSalvo").modal('show');
+}
