@@ -306,11 +306,19 @@ body{
   height: 95%;
   width: 97%;
   border: none;
-  overflow-y: hidden;
   resize: none;
 
   margin-top: 10px;
 }
+
+.fonteCodigo::-webkit-scrollbar{
+  width: 8px;
+}
+
+.fonteCodigo::-webkit-scrollbar-thumb{
+  background-color: rgba(80, 129, 251, 0.16);
+}
+
 
 .botaoVisualizar{
   width: 100%;

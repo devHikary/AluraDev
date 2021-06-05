@@ -392,11 +392,18 @@ body{
     height: 100%;
     width: 90%;
     border: none;
-    overflow-y: hidden;
     resize: none;
   
     margin-top: 10px;
     
+  }
+
+  .fonteCodigo::-webkit-scrollbar{
+    width: 6px;
+  }
+  
+  .fonteCodigo::-webkit-scrollbar-thumb{
+    background-color: rgba(80, 129, 251, 0.16);
   }
   /*Menu hamburguer*/
 .menuHamburguer{
